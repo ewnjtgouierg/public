@@ -1,0 +1,726 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://edit.loc/Forca/Page/doctype.dtd">
+<!-- saved from url=(0040)http://edit.loc/editor#/F/sys/.gitignore -->
+<html class=" dhpdf idc0_350"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>/F/sys/.gitignore</title><meta name="keywords"><meta name="description"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1"><link rel="stylesheet" id="forca_css" type="text/css" href="./scrobble_files/4e83ad4ba7796006dcff5899a7817354.css"><script by="JS_Manager" contents="Config:i">Config.i(
+{
+	'frontend': true,
+	'local': true,
+	'test': null,
+	'log': 
+		{
+			'on': true,
+			'domNodesFull': false
+		},
+	'ajaxHeaders': 
+		{
+			'js-md5': "7d8067e6a75c4cf6357416678ea62565",
+			'css-md5': "4e83ad4ba7796006dcff5899a7817354"
+		},
+	'extensionLoaderID': "hpfofmppfnjlapmhmofommbcajafkllb",
+	'extensionMode': null,
+	'superUser': true
+});
+//# sourceURL=Config:i()
+</script><script by="JS_Manager" contents="Lang:i">Lang.i(
+{
+	'data': 
+		{
+			'Table': 
+				{
+					'Deselect all': "Deselect all",
+					'Select all': "Select all",
+					'on': "on",
+					'off': "off",
+					'Are you sure you want to remove item "__TITLE__"?': "Are you sure you want to remove item \"__TITLE__\"?",
+					'No items selected': "No items selected",
+					'Confirmation required': "Confirmation required",
+					'You are about to completely remove __NUMBER__ item(s).\nPlease confirm this operation': "You are about to completely remove __NUMBER__ item(s).\\nPlease confirm this operation",
+					'Remove new row?': "Remove new row?"
+				}
+		}
+});
+//# sourceURL=Lang:i()
+</script><script by="JS_Manager_Late::page:head" contents="
+//# sourceURL=HotKeys:add()
+">HotKeys.i().add(
+{
+	'key': "ctrl+e",
+	'handler': "Control_Toggler.ii('jsObj8').go(\n{\n\t'buttonID': null,\n\t'vars': null\n});"
+});
+//# sourceURL=HotKeys:add()
+</script><script by="JS_Manager_Late::page:head" contents="
+//# sourceURL=Page_Tag_Panel:ii()
+">Page_Tag_Panel.ii(
+{
+	'ini': 
+		{
+			'combination': "ctrl+alt+PgDn"
+		},
+	'id': "jsObj9"
+});
+//# sourceURL=Page_Tag_Panel:ii()
+</script><script by="JS_Manager_Late::page:head" contents="
+//# sourceURL=Css_Responsive:addMode()
+">Css_Responsive.i().addMode(
+{
+	'min': 0,
+	'max': 767,
+	'test': 320,
+	'condition': "(max-width: 767px)",
+	'name': "mobile",
+	'enabled': "(max-height: 10000px)",
+	'disabled': "(min-height: 10000px)"
+});
+//# sourceURL=Css_Responsive:addMode()
+</script><script src="./scrobble_files/theme-iplastic.js"></script><style id="ace-iplastic">.ace-iplastic .ace_gutter {background: #dddddd;color: #666666}.highlighted { color: red !important; }.ace_php_tag	{		color: #FF0000;	}.ace-iplastic .ace_paren,.ace-iplastic .ace_operator	{		color: #8000FF;	}.ace-iplastic .ace_print-margin {width: 1px;background: #bbbbbb}.ace-iplastic {background-color: white;color: black;}.ace-iplastic .ace_cursor {color: black}.ace-iplastic .ace_marker-layer .ace_selection {background: #c0c0c0;}.ace-iplastic.ace_multiselect .ace_selection.ace_start {border-radius: 4px}.ace-iplastic .ace_marker-layer .ace_step {background: #444444}.ace-iplastic .ace_marker-layer .ace_bracket {margin: -1px 0 0 -1px;border: 1px solid #49483E;background: #FFF799}.ace-iplastic .ace_marker-layer .ace_active-line {background: #e8e8ff}.ace-iplastic .ace_gutter-active-line {background-color: #eeeeee}.ace-iplastic .ace_marker-layer .ace_selected-word {border: 1px solid #555555;border-radius:4px}.ace-iplastic .ace_invisible {color: #999999}.ace-iplastic .ace_entity.ace_name.ace_tag,.ace-iplastic .ace_keyword:not(.ace_operator),.ace-iplastic .ace_meta.ace_tag,.ace-iplastic .ace_storage {color: #0000FF;font-weight: bold}.ace-iplastic .ace_constant {color: #333333;font-weight: 700}.ace-iplastic .ace_constant.ace_character,.ace-iplastic .ace_constant.ace_language,.ace-iplastic .ace_constant.ace_numeric,.ace-iplastic .ace_constant.ace_other {color: #0066FF;font-weight: 700}.ace-iplastic .ace_constant.ace_numeric{font-weight: 100}.ace-iplastic .ace_invalid {color: #F8F8F0;background-color: #F92672}.ace-iplastic .ace_invalid.ace_deprecated {color: #F8F8F0;background-color: #AE81FF}.ace-iplastic .ace_support.ace_constant,.ace-iplastic .ace_support.ace_function {color: #333333;}.ace-iplastic .ace_fold {background-color: #464646;border-color: #F8F8F2}.ace-iplastic .ace_storage.ace_type,.ace-iplastic .ace_support.ace_type {color: #0000FF;font-weight: 700;font-style: italic}.ace-iplastic .ace_entity.ace_name.ace_function,.ace-iplastic .ace_entity.ace_other,.ace-iplastic .ace_entity.ace_other.ace_attribute-name,.ace-iplastic .ace_variable {/*color: #3366cc;*/}.ace-iplastic .ace_variable	{		color: #000080;	}.ace-iplastic .ace_variable.ace_parameter {font-style: italic;color: #2469E0}.ace-iplastic .ace_string {color: #808080}.ace-iplastic .ace_comment {color: #008000;font-style: italic}.ace-iplastic .ace_fold-widget {background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42mWKsQ0AMAzC8ixLlrzQjzmBiEjp0A6WwBCSPgKAXoLkqSot7nN3yMwR7pZ32NzpKkVoDBUxKAAAAABJRU5ErkJggg==);}
+/*# sourceURL=ace/css/ace-iplastic */</style><style addedbyjs="true">
+/** Control_Pagination **/
+.Control_Pagination
+	{
+		display: grid;
+		grid-auto-flow: column;
+		grid-gap: 10px;
+	}
+.Control_Pagination .controls
+	{
+		display: grid;
+		grid-auto-flow: column;
+		grid-gap: 10px;
+		align-items: center;
+	}
+.Control_Pagination .Field_Choice_Radio
+	{
+		display: grid;
+		grid-auto-flow: column;
+		grid-gap: 10px;
+	}
+.Control_Pagination .pagelink,
+.Control_Pagination span.pagelink
+	{
+		border: 1px solid gray;
+		padding: .5em;
+		display: block;
+	}
+.Control_Pagination .disabled
+	{
+		opacity: .5;
+	}
+.Control_Pagination .pagelink.active
+	{
+		background: #e0e0e050;
+		text-decoration: none;
+	}
+.Control_Pagination [pagelinks]
+	{
+		display: grid;
+		grid-auto-flow: column;
+		grid-gap: 10px;
+		align-items: stretch;
+	}
+.Control_Pagination .page-size
+	{
+		width: 2em;
+	}
+/** /Control_Pagination **/
+
+/** Field_Choice_Radio **/
+.Field_Choice_Radio .disabled
+	{
+		opacity: 0.5;
+	}
+/** /Field_Choice_Radio **/
+
+/** Field **/
+.Field[incorrect]
+	{
+		background: red;
+		color: white;
+	}
+/** /Field **/
+
+/** Control_Tooltip **/
+.Control_Tooltip
+	{
+		z-index: 100000;
+		position: absolute;
+		min-height: auto;
+		overflow: visible;
+		width: auto;
+		background: white;
+		padding: 1em;
+		box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 10px;
+		box-sizing: border-box;
+	}
+.Control_Tooltip.right
+	{
+		margin-left: 15px;
+	}
+.Control_Tooltip.left
+	{
+		margin-right: 15px;
+	}
+.Control_Tooltip.above
+	{
+		margin-bottom: 10px;
+	}
+.Control_Tooltip.under
+	{
+		margin-top: 10px;
+	}
+.Control_Tooltip:before
+	{
+		content: "";
+		position: absolute;
+		transform: rotate(45deg);
+		top: 50%;
+		left: -7px;
+		margin-top: -8px;
+		border-width: 8px;
+		border-style: solid;
+		border-color: transparent transparent white white;
+	}
+.Control_Tooltip.under:before
+	{
+		top: 0;
+		left: 15px;
+		margin-top: -7px;
+		transform: rotate(135deg);
+	}
+/** /Control_Tooltip **/
+
+/** Pro_Editor_Git_Log **/
+.Pro_Editor_Git_Log
+	{
+		background: white;
+		padding: 10px;
+		font-size: 20px;
+	}
+.Pro_Editor_Git_Log:after
+	{
+		display: block;
+		content: '';
+		clear: left;
+	}
+.Pro_Editor_Git_Log>*
+	{
+		float: left;
+		clear: left;
+		padding: 2.5px 15px;
+	}
+.Pro_Editor_Git_Log .odd
+	{
+		background: #f0f0f0;
+	}
+.Pro_Editor_Git_Log .merge
+	{
+		color: #ff55ff;
+	}
+.Pro_Editor_Git_Log .current
+	{
+		background: red;
+		color: white;
+	}
+/** /Pro_Editor_Git_Log **/
+</style><script src="./scrobble_files/mode-php.js"></script><script src="./scrobble_files/mode-plain_text.js"></script><style addedbyjs="true">
+/** Pro_Editor_Git_Diff **/
+.Pro_Editor_Git_Diff
+	{
+		white-space: pre-wrap;
+	}
+.Pro_Editor_Git_Diff .one-file-header
+	{
+		background: #5555ff;
+		color: white;
+		margin: 10px 0;
+	}
+.Pro_Editor_Git_Diff .added
+	{
+		color: green;
+	}
+.Pro_Editor_Git_Diff .removed
+	{
+		color: red;
+	}
+/** /Pro_Editor_Git_Diff **/
+
+/** Pro_Editor_Git_Trait **/
+.Pro_Editor_Git_Trait
+	{
+		white-space: pre-wrap;
+	}
+/** /Pro_Editor_Git_Trait **/
+</style></head><div class="dialogue-text overflown" tabindex="0" style="z-index: 101; height: 662px;"><div class="Pro_Editor_Git_Trait"><div class="Pro_Editor_Git_Diff"><div class="one-file-header pointer" onclick="Pro_Editor_Page_Load.ii(
+{
+	&#39;ini&#39;: &quot;\/F\/sys\/Pro\/Audio\/Player\/Play\/.php&quot;,
+	&#39;id&#39;: &quot;obj_6_0&quot;
+});">Pro/Audio/Player/Play/.php</div>
+		function ___construct()
+			{
+
+				if (is_dir($this-&gt;path)) return new Pro_Audio_Player_Play_Dir($this-&gt;path);
+
+				if (in_array(pathinfo($this-&gt;path)['extension'], [null, 'txt'], true))
+					$playList = '-playlist';
+				<span class="added">else</span>
+<span class="added">					new Pro_Audio_Player_Play_Scrobble_Path($this-&gt;path);</span>
+
+				if (!file_exists(self::$pipe))
+					new Tool_Exec_Root("mkfifo ".self::$pipe);
+<div class="one-file-header pointer" onclick="Pro_Editor_Page_Load.ii(
+{
+	&#39;ini&#39;: &quot;\/F\/sys\/Pro\/Audio\/Player\/Play\/Dir\/.php&quot;,
+	&#39;id&#39;: &quot;obj_6_1&quot;
+});">Pro/Audio/Player/Play/Dir/.php</div>				$path = Config::i()-&gt;tempDir().'/'.uniqid().'.txt';
+				FileSystem::i()-&gt;save($path, join("\n", $this-&gt;list)); 
+
+				<span class="added">new Pro_Audio_Player_Play_Dir_Scrobble_Stop;</span>
+<span class="added">				new Tool_Exec_Root("php ".BASEDIR."/Forca/.php ".Page::sub('scrobble')." path=$path", null, true);</span>
+
+				new Pro_Audio_Player_Play($path);
+
+			}
+<div class="one-file-header pointer" onclick="Pro_Editor_Page_Load.ii(
+{
+	&#39;ini&#39;: &quot;\/F\/sys\/Pro\/Audio\/Player\/Play\/Dir\/Scrobble\/.php&quot;,
+	&#39;id&#39;: &quot;obj_6_2&quot;
+});">Pro/Audio/Player/Play/Dir/Scrobble/.php</div>new file mode 100644<span class="added">&lt;?
+</span>
+<span class="added">
+</span>
+<span class="added">class Pro_Audio_Player_Play_Dir_Scrobble
+</span>
+<span class="added">	{
+</span>
+<span class="added">use Page_Cli;
+</span>
+<span class="added">var $__iniArgs = ['path'];
+</span>
+<span class="added">var $__publicVars = ['path'];
+</span>
+<span class="added">
+</span>
+<span class="added">		function ___construct()
+</span>
+<span class="added">			{
+</span>
+<span class="added">
+</span>
+<span class="added">				$playListPath = $this-&gt;path;
+</span>
+<span class="added">
+</span>
+<span class="added">				$playList = (new Tool_Exec_Root("cat \"$playListPath\""))-&gt;output;
+</span>
+<span class="added">				$playList = explode("\n", $playList);
+</span>
+<span class="added">
+</span>
+<span class="added">				foreach ($playList as $path)
+</span>
+<span class="added">					{
+</span>
+<span class="added">						$info = pathinfo($path);
+</span>
+<span class="added">						$map[$info['filename']] = $path;
+</span>
+<span class="added">					}
+</span>
+<span class="added">
+</span>
+<span class="added">				while (true)
+</span>
+<span class="added">					{
+</span>
+<span class="added">
+</span>
+<span class="added">						$cmd = "lsof -c mplayer | fgrep \".mp3\" | awk -F\"/\" '{ print \$NF; }' | cut -d'.' -f1";
+</span>
+<span class="added">
+</span>
+<span class="added">						$filename = (new Tool_Exec_Root([
+</span>
+<span class="added">							'command' =&gt; $cmd,
+</span>
+<span class="added">							'exceptionOnError' =&gt; false,
+</span>
+<span class="added">								]))-&gt;output;
+</span>
+<span class="added">
+</span>
+<span class="added">						$path = $map[$filename];
+</span>
+<span class="added">
+</span>
+<span class="added">						if ($path != $lastPath)
+</span>
+<span class="added">							{
+</span>
+<span class="added">								new Pro_Audio_Player_Play_Scrobble_Path($path);
+</span>
+<span class="added">								$lastPath = $path;
+</span>
+<span class="added">							}
+</span>
+<span class="added">
+</span>
+<span class="added">						sleep(5);
+</span>
+<span class="added">
+</span>
+<span class="added">					}
+</span>
+<span class="added">
+</span>
+<span class="added">			}
+</span>
+<span class="added">
+</span>
+<span class="added">	}</span>
+<div class="one-file-header pointer" onclick="Pro_Editor_Page_Load.ii(
+{
+	&#39;ini&#39;: &quot;\/F\/sys\/Pro\/Audio\/Player\/Play\/Dir\/Scrobble\/Stop\/.php&quot;,
+	&#39;id&#39;: &quot;obj_6_3&quot;
+});">Pro/Audio/Player/Play/Dir/Scrobble/Stop/.php</div>new file mode 100644<span class="added">&lt;?
+</span>
+<span class="added">
+</span>
+<span class="added">class Pro_Audio_Player_Play_Dir_Scrobble_Stop
+</span>
+<span class="added">	{
+</span>
+<span class="added">use Page_Cli;
+</span>
+<span class="added">
+</span>
+<span class="added">		function ___construct()
+</span>
+<span class="added">			{
+</span>
+<span class="added">				$psc = "ps -e -O %cpu --sort %cpu";
+</span>
+<span class="added">				new Tool_Exec_Root("kill $($psc | grep scr | grep obble | awk '{print \$1;}') || true");
+</span>
+<span class="added">			}
+</span>
+<span class="added">
+</span>
+<span class="added">	}</span>
+<div class="one-file-header pointer" onclick="Pro_Editor_Page_Load.ii(
+{
+	&#39;ini&#39;: &quot;\/F\/sys\/Pro\/Audio\/Player\/Play\/Scrobble\/.php&quot;,
+	&#39;id&#39;: &quot;obj_6_4&quot;
+});">Pro/Audio/Player/Play/Scrobble/.php</div>new file mode 100644<span class="added">&lt;?
+</span>
+<span class="added">
+</span>
+<span class="added">class Pro_Audio_Player_Play_Scrobble
+</span>
+<span class="added">	{
+</span>
+<span class="added">use Ini;
+</span>
+<span class="added">var $__iniArgs = ['method', 'args', 'post'];
+</span>
+<span class="added">var $__iniCfg = true;
+</span>
+<span class="added">
+</span>
+<span class="added">		function ___construct()
+</span>
+<span class="added">			{
+</span>
+<span class="added">
+</span>
+<span class="added">				$args = au($this-&gt;args, [
+</span>
+<span class="added">					'api_key' =&gt; $this-&gt;apiKey,
+</span>
+<span class="added">					'method' =&gt; $this-&gt;method,
+</span>
+<span class="added">					'sk' =&gt; Pro_Audio_Player_Play_Scrobble_Auth::i()-&gt;sessionKey(),
+</span>
+<span class="added">						]);
+</span>
+<span class="added">
+</span>
+<span class="added">				$this-&gt;clean($args);
+</span>
+<span class="added">
+</span>
+<span class="added">				ksort($args);
+</span>
+<span class="added">
+</span>
+<span class="added">				foreach ($args as $key =&gt; $val)
+</span>
+<span class="added">					$sig .= $key.$val;
+</span>
+<span class="added">				$sig .= $this-&gt;sharedSecret;
+</span>
+<span class="added">				$sig = md5($sig);
+</span>
+<span class="added">
+</span>
+<span class="added">				$args = au($args, [
+</span>
+<span class="added">					'api_sig' =&gt; $sig,
+</span>
+<span class="added">					'format' =&gt; 'json',
+</span>
+<span class="added">						]);
+</span>
+<span class="added">
+</span>
+<span class="added">				$this-&gt;clean($args);
+</span>
+<span class="added">
+</span>
+<span class="added">				$req = new Http_Request([
+</span>
+<span class="added">					'url' =&gt; 'http://ws.audioscrobbler.com/2.0/',
+</span>
+<span class="added">					$this-&gt;post ? 'post' : 'vars' =&gt; $args,
+</span>
+<span class="added">						]);
+</span>
+<span class="added">
+</span>
+<span class="added">				$r = json_decode($req-&gt;response['content'], true);
+</span>
+<span class="added">
+</span>
+<span class="added">if ($req-&gt;response['code'] != 200)
+</span>
+<span class="added">	throw new Exception("Error $r[error]: $r[message]");
+</span>
+<span class="added">
+</span>
+<span class="added">_($r);	
+</span>
+<span class="added">	$this-&gt;response = $r;
+</span>
+<span class="added">
+</span>
+<span class="added">			}
+</span>
+<span class="added">
+</span>
+<span class="added">		function clean(&amp;$args)
+</span>
+<span class="added">			{
+</span>
+<span class="added">				$args = array_filter($args, function ($val) { return $val !== false &amp;&amp; !is_null($val); });
+</span>
+<span class="added">			}
+</span>
+<span class="added">
+</span>
+<span class="added">	}</span>
+<div class="one-file-header pointer" onclick="Pro_Editor_Page_Load.ii(
+{
+	&#39;ini&#39;: &quot;\/F\/sys\/Pro\/Audio\/Player\/Play\/Scrobble\/Auth\/.php&quot;,
+	&#39;id&#39;: &quot;obj_6_5&quot;
+});">Pro/Audio/Player/Play/Scrobble/Auth/.php</div>new file mode 100644<span class="added">&lt;?
+</span>
+<span class="added">
+</span>
+<span class="added">class Pro_Audio_Player_Play_Scrobble_Auth
+</span>
+<span class="added">	{
+</span>
+<span class="added">use Class_Factory, Data;
+</span>
+<span class="added">var $__iniCfg = true;
+</span>
+<span class="added">
+</span>
+<span class="added">		function get_sessionKey()
+</span>
+<span class="added">			{
+</span>
+<span class="added">				if ($this-&gt;ownRequests) return null;
+</span>
+<span class="added">				$this-&gt;ownRequests = true;
+</span>
+<span class="added">
+</span>
+<span class="added">				if (!$this-&gt;token) $this-&gt;getToken();
+</span>
+<span class="added">
+</span>
+<span class="added">				$this-&gt;getSession();
+</span>
+<span class="added">
+</span>
+<span class="added">				unset($this-&gt;ownRequests);
+</span>
+<span class="added">			}
+</span>
+<span class="added">
+</span>
+<span class="added">		function getToken()
+</span>
+<span class="added">			{
+</span>
+<span class="added">				$r = new Pro_Audio_Player_Play_Scrobble('auth.gettoken');
+</span>
+<span class="added">				$token = $r-&gt;response['token'];
+</span>
+<span class="added">				new Cfg_Update(__CLASS__, [
+</span>
+<span class="added">					'update' =&gt; [
+</span>
+<span class="added">							'token' =&gt; $token,
+</span>
+<span class="added">						],
+</span>
+<span class="added">					]);
+</span>
+<span class="added">				$url = "http://www.last.fm/api/auth/?api_key=".
+</span>
+<span class="added">					Pro_Audio_Player_Play_Scrobble_Cfg::i()-&gt;apiKey."&amp;token=".$token;
+</span>
+<span class="added">__($url);
+</span>
+<span class="added">				throw new Exception("Please visit url $url to authenticate the token");
+</span>
+<span class="added">			}
+</span>
+<span class="added">
+</span>
+<span class="added">		function getSession()
+</span>
+<span class="added">			{
+</span>
+<span class="added">				$r = new Pro_Audio_Player_Play_Scrobble('auth.getsession', [
+</span>
+<span class="added">							'token' =&gt; $this-&gt;token,
+</span>
+<span class="added">						]);
+</span>
+<span class="added">				$sessionKey = $r-&gt;response['session']['key'];
+</span>
+<span class="added">				new Cfg_Update(__CLASS__, [
+</span>
+<span class="added">					'update' =&gt; [
+</span>
+<span class="added">							'sessionKey' =&gt; $sessionKey,
+</span>
+<span class="added">						],
+</span>
+<span class="added">					]);
+</span>
+<span class="added">			}
+</span>
+<span class="added">
+</span>
+<span class="added">	}</span>
+<div class="one-file-header pointer" onclick="Pro_Editor_Page_Load.ii(
+{
+	&#39;ini&#39;: &quot;\/F\/sys\/Pro\/Audio\/Player\/Play\/Scrobble\/Path\/.php&quot;,
+	&#39;id&#39;: &quot;obj_6_6&quot;
+});">Pro/Audio/Player/Play/Scrobble/Path/.php</div>new file mode 100644<span class="added">&lt;?
+</span>
+<span class="added">
+</span>
+<span class="added">class Pro_Audio_Player_Play_Scrobble_Path
+</span>
+<span class="added">	{
+</span>
+<span class="added">use Ini;
+</span>
+<span class="added">var $__iniArgs = ['path'];
+</span>
+<span class="added">
+</span>
+<span class="added">		function ___construct()
+</span>
+<span class="added">			{
+</span>
+<span class="added">				
+</span>
+<span class="added">				if (preg_match("~/music/(?'artist'[^/]+)/(?'album'[^/]+)/(?'track'[^/]+)\.mp3~iU",
+</span>
+<span class="added">											$this-&gt;path, $m))
+</span>
+<span class="added">					{
+</span>
+<span class="added">						preg_names($m);
+</span>
+<span class="added">						$m['track'] = preg_replace("~^\d+[-_\. ]*~", '', $m['track']);
+</span>
+<span class="added">						$m['track'] = preg_replace("~_\d+_lame_cbr$~", '', $m['track']);
+</span>
+<span class="added">						$m['album'] = preg_replace("~^\d{4}[ -_]+~", '', $m['album']);
+</span>
+<span class="added">
+</span>
+<span class="added">						new Pro_Audio_Player_Play_Scrobble('track.scrobble', [
+</span>
+<span class="added">								'artist' =&gt; $m['artist'],
+</span>
+<span class="added">								'album' =&gt; $m['album'],
+</span>
+<span class="added">								'track' =&gt; $m['track'],
+</span>
+<span class="added">								'timestamp' =&gt; time(),
+</span>
+<span class="added">							], true);
+</span>
+<span class="added">					}
+</span>
+<span class="added">
+</span>
+<span class="added">			}
+</span>
+<span class="added">
+</span>
+<span class="added">	}</span>
+<div class="one-file-header pointer" onclick="Pro_Editor_Page_Load.ii(
+{
+	&#39;ini&#39;: &quot;\/F\/sys\/Pro\/Audio\/Player\/Play\/Scrobble\/Test\/.php&quot;,
+	&#39;id&#39;: &quot;obj_6_7&quot;
+});">Pro/Audio/Player/Play/Scrobble/Test/.php</div>new file mode 100644<span class="added">&lt;?
+</span>
+<span class="added">
+</span>
+<span class="added">class Pro_Audio_Player_Play_Scrobble_Test
+</span>
+<span class="added">	{
+</span>
+<span class="added">use Page_Cli;
+</span>
+<span class="added">
+</span>
+<span class="added">		function ___construct()
+</span>
+<span class="added">			{
+</span>
+<span class="added">				new Pro_Audio_Player_Play_Scrobble('track.scrobble', [
+</span>
+<span class="added">						'artist' =&gt; "Katatonia",
+</span>
+<span class="added">						'album' =&gt; "Teargas",
+</span>
+<span class="added">						'track' =&gt; "Teargas",
+</span>
+<span class="added">						'timestamp' =&gt; time(),
+</span>
+<span class="added">					], true);
+</span>
+<span class="added">			}
+</span>
+<span class="added">
+</span>
+<span class="added">	}</span>
+<div class="one-file-header pointer" onclick="Pro_Editor_Page_Load.ii(
+{
+	&#39;ini&#39;: &quot;\/F\/sys\/Pro\/Audio\/Player\/Stop\/.php&quot;,
+	&#39;id&#39;: &quot;obj_6_8&quot;
+});">Pro/Audio/Player/Stop/.php</div>		function __construct()
+			{
+				new Tool_Exec_Root("pkill mplayer || pkill aplaymidi || echo");
+				<span class="added">new Pro_Audio_Player_Play_Dir_Scrobble_Stop;</span>
+			}
+	}
+</div></div></div></html>
